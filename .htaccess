@@ -1,0 +1,9 @@
+
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+<RequireAll>
+    Require ip 95.223.228.228
+</RequireAll>

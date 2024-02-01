@@ -1,0 +1,32 @@
+body {
+    background: rgb(169, 169, 169);
+    font-size: large;
+}
+
+#world {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+#head {
+    position: relative;
+    height: 100vh;
+}
+
+#body-work {
+    position: absolute;
+    height: 100vh;
+}
+
+#body-fun {
+    position: absolute;
+    height: 100vh;
+}
+
+#footer {
+    position: absolute;
+    height: 100vh;
+}

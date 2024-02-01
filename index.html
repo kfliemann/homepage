@@ -13,95 +13,337 @@
 	<meta property="og:description" content="portfolio website to showcase my projects and experiences">
 
 	<link rel="icon" href="favicon.png">
-	<link rel="stylesheet" href="css/my.css">
-	<script src="js/bootstrap.js"></script>
-	<script src="myscript.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/portfolio.css">
+	<script src="js/functionality.js"></script>
 </head>
 
-<body>
+<body ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)" onwheel="checkScroll(event)">
 	<div id="world">
 		<div id="head">
-			<div class="code-container-layer-1">
+			<div>
+				<a onclick="switchPageState(1)">zum footer</a>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-2">
 					<p class="code-init" id="code-1">
 						&lt;html&gt;
 					</p>
 				</div>
 			</div>
-			<div class="code-container-layer-1">
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
 					<p class="code-follow" id="code-2">
 						&lt;head&gt;<br>
 					</p>
 				</div>
 			</div>
-			<div class="code-container-layer-1">
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;meta&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1">
+				<div class="code-container-layer-5">
 					<p class="code-follow" id="code-3">
 						hi, i'm kevin.
 					</p>
 				</div>
 			</div>
 			<div class="code-container-layer-1">
-				<div class="code-container-layer-4">
+				<div class="code-container-layer-5">
 					<p class="code-follow" id="code-4">
 						software developer swinging from front- to back- and everything inbetween
 					</p>
 				</div>
 			</div>
-			<div class="code-container-layer-1">
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;meta&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
 					<p class="code-follow" id="code-5">
 						&lt;/head&gt;<br>
 					</p>
 				</div>
 			</div>
+			<div>
+				<a onclick="switchPageState(0)">zum body</a>
+			</div>
 		</div>
 
-
-		<div id="body">
-			<div class="code-container-layer-1">
+		<div class="body" id="body-work">
+			<div>
+				<a onclick="switchPageState(1)">zum header</a>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
-					<p>
+					<p class="code-follow" id="code-2">
 						&lt;body&gt;<br>
 					</p>
 				</div>
 			</div>
-
-			<p>TODO</p>
-
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;div&gt;<br>
+					</p>
+				</div>
+			</div>
 			<div class="code-container-layer-1">
+				<div class="code-container-layer-5">
+					<div id="work">
+						<h1>Work related Projects</h1>
+						<div>
+							<h2>
+								Schellenberg GmbH Shopware Upgrade
+							</h2>
+							<p>
+								In this project, I supported <a href="https://www.schellenberg.de/"
+									target="_blank">Schellenberg GmbH</a> in
+								upgrading their webshop by migrating it
+								from Shopware version 5 to version 6.
+							</p>
+							<p>This step was not a simple update, but a fundamental
+								change, as Shopware 5 and 6 are based on different technical foundations and frameworks.
+							</p>
+							<p>
+								During the project, I not only implemented the frontend design according to the
+								company's
+								wishes, but also extended Shopware plugins and wrote my own scripts to ensure that
+								everything ran smoothly in the new system.
+							</p>
+							<p>
+								I also took care of setting up the web server to
+								ensure that everything worked optimally.
+							</p>
+
+							<p>
+								you can filter by streaming providers and availability on streaming providers.
+							</p>
+							<p>
+								connect with friends and loved ones and find out what you can watch together next based
+								on
+								your matches.
+							</p>
+							<p>
+								languages used: php, javascript, html, css
+							</p>
+							<button class="project-button code-button">
+								<a href="https://schellenberg-shop.de/" target="_blank">schellenberg-shop.de</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;/div&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
-					<p id="">
+					<p class="code-follow" id="code-5">
 						&lt;/body&gt;<br>
 					</p>
 				</div>
 			</div>
+			<div>
+				<a onclick="switchPageState(0)">zum nächsten body</a>
+			</div>
+		</div>
+		<div class="body" id="body-fun">
+			<div>
+				<a onclick="switchPageState(1)">zum vorherigen body</a>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-3">
+					<p class="code-follow" id="code-2">
+						&lt;body&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;div&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1">
+				<div class="code-container-layer-5">
+					<div id="fun">
+						<h1>
+							Private projects
+						</h1>
+						<div>
+							<h2>
+								Text of Life
+							</h2>
+							<p>my first adventure into building something web-related. <br>
+								<b>text of life</b>
+							</p>
+							<p>
+								allows users to insert text and select a letter to act as a living cell
+								in conway's game of life.
+							</p>
+							<p> the application then runs the game according to the known rules,
+								with the selected letter acting as a live cell and all other letters being considered
+								"dead"
+								cells.
+							<p>
+								in addition, the application offers a random game of life function with the
+								modes small / large shapes. for randomly generated runs, you can view and share the seed
+								used so
+								that you can replay this run.
+
+							</p>
+
+							<p>
+								written in html, javascript and css
+							</p>
+							<button class="project-button code-button">
+								<a href="https://github.com/kfliemann/Text2Life">&lt;code&gt;</a>
+							</button>
+							<button class="project-button code-button">
+								<a href="../text2life/index.html">demo</a>
+							</button>
+						</div>
+						<div>
+							<h2>
+								Bachelorthesis
+							</h2>
+							<p>
+								Thesis topic: "Design and implementation of an assessment analytics dashboard for a
+								web-based
+								Learning Management System"
+							</p>
+							<p>
+								Goal of this project
+							</p>
+							<p>
+								In the context of the Operating Systems and Distributed Systems department project, I
+								contributed to the development of a Moodle-like educational learning system. My focus
+								was on
+								implementing a professor admin overview, providing a comprehensive display of all
+								available
+								tasks.
+								A task detail view allows for task editing and facilitates a comparison of
+								different versions of a question with basic statistics.
+								Furthermore, visualized metrics from the field of item analysis are intended to provide
+								professors
+								with the ability to evaluate the quality of a task and, if necessary, make adjustments
+								to
+								enhance the effectiveness of the teaching materials.
+							</p>
+							<p>
+								written using php, angular (typescript, scss), nestjs, prisma, mysql and hosted on a
+								hetzner
+								server
+							</p>
+							<button class="project-button code-button">
+								<a href="/bachelorthesis/index.html">demo</a>
+							</button>
+						</div>
+						<div>
+							<h2>
+								Matcher (wip)
+							</h2>
+							<p>
+								matcher is a tinder-esque app that lets you swipe through series and movies.
+							</p>
+							<p>
+								you can filter by streaming providers and availability on streaming providers.
+							</p>
+							<p>
+								connect with friends and loved ones and find out what you can watch together next based
+								on
+								your matches.
+							</p>
+							<p>
+								written in (wip)
+							</p>
+							<button class="project-button code-button">
+								<a href="#" onclick="return false;">demo (todo)</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;/div&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-3">
+					<p class="code-follow" id="code-5">
+						&lt;/body&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div>
+				<a onclick="switchPageState(0)">zum footer</a>
+			</div>
 		</div>
 		<div id="footer">
-			<div class="code-container-layer-1">
+			<div>
+				<a onclick="switchPageState(1)">zum body</a>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
 					<p>
 						&lt;footer&gt;<br>
 					</p>
 				</div>
 			</div>
-
-			<p>TODO</p>
-
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;div&gt;<br>
+					</p>
+				</div>
+			</div>
 			<div class="code-container-layer-1">
+				<div class="code-container-layer-5">
+					<p class="code-follow" id="code-3">
+						contact me
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
+				<div class="code-container-layer-4">
+					<p class="code-follow" id="code-2">
+						&lt;/div&gt;<br>
+					</p>
+				</div>
+			</div>
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-3">
 					<p>
 						&lt;/footer&gt;<br>
 					</p>
 				</div>
 			</div>
-			<div class="code-container-layer-1">
+			<div class="code-container-layer-1 tag-container">
 				<div class="code-container-layer-2">
 					<p>
 						&lt;/html&gt;
 					</p>
 				</div>
+			</div>
+			<div>
+				<a onclick="switchPageState(0)">zum header</a>
 			</div>
 		</div>
 	</div>

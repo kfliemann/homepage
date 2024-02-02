@@ -3,15 +3,17 @@ Todo:
     ✔ header abteil one page machen @done(24-02-02 00:05)
     ☐ typing effect für das letzte </html> element im footer machen
     ✔ body content @done(24-02-02 00:05)
+    ✔ header styling @done(24-02-02 22:20)
+    ✔ funktionierende buttons zum hoch / runterswipen @done(24-02-02 22:21)
     ☐ body styling
     ✔ footer content @done(24-02-02 00:05)
     ☐ footer styling
-    ☐ header animation mit schwingendem text "and everything inbetween" (siehe pendulum ordner)
+    ☐ header animation mit schwingendem text "and everything inbetween" (siehe pendulum ordner)(??)
     ✔ scroll effekt funktionalität @done(24-02-02 00:05)
     ✔ scrollen auch mit pfeiltasten / bild auf,ab / (w/s ?) @done(24-02-02 14:40)
     ✔ scroll effekt machen, sodass nicht plötzlich neue elemente spawnen sondern nach oben/unten verschoben werden mit einem smooth scroll @done(24-02-02 14:24)
     ☐ favicon hinzufügen
-    
+    ☐ go back adventurer page wenn man eine url anklickt, die nicht existiert
 mobile ansicht:
     ☐ seiten ansicht mobile porten
     ☐ scroll effekt per js für mobile ansicht implementieren

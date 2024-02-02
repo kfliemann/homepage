@@ -1,9 +1,21 @@
-body {
-    background: rgb(169, 169, 169);
+:root {
+    /* px values needed, because "parallax" has to be hardcoded and non responsive*/
+    --arrowMargin: -30px;
+    --slideElementMargin: 30px;
+
+    /* tab indent of a html-tag-block */
+    --codeTagMargin: 2rem;
+
+    --leftBorder: 4px solid black;
 }
 
-.tag-container {
-    font-family: monospace;
+@font-face {
+    font-family: 'SplineSansMono';
+    src: url('../fonts/SplineSansMono-Regular.ttf') format('truetype');
+}
+
+body {
+    background: rgb(169, 169, 169);
 }
 
 #world {
@@ -25,17 +37,70 @@ body {
 .slideElementContainer {
     position: relative;
     height: 100vh;
+    margin-left: var(--slideElementMargin);
+    font-family: "SplineSansMono";
+}
+
+#head-content,
+#body-work-content,
+#body-fun-content,
+#footer-content,
+.tag-container {
+    border-left: var(--leftBorder);
+    padding-left: 0.4rem;
+}
+
+.tag-container {
+    font-family: monospace;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     font-size: 1.5rem;
+    border-left: var(--leftBorder);
+}
+
+.tag-container p {
+    padding-bottom: 0.1rem;
+}
+
+#head {
+    padding-top: 50vh;
+}
+
+#head-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#body-work {
+    padding-top: 25vh;
+}
+
+#body-fun {
+    padding-top: 8.8vh;
+}
+
+#footer {
+    padding-top: 36vh;
+}
+
+.slideScrollButtonUp {
+    display: flex;
+    margin-left: var(--arrowMargin);
+}
+
+.slideScrollButtonDown {
+    display: flex;
+    margin-left: var(--arrowMargin);
 }
 
 .code-container-layer-3 {
-    margin-left: 2em;
+    margin-left: var(--codeTagMargin);
 }
 
 .code-container-layer-4 {
-    margin-left: 4em;
+    margin-left: calc(var(--codeTagMargin) * 2);
 }
 
 .code-container-layer-5 {
-    margin-left: 6em;
+    margin-left: calc(var(--codeTagMargin) * 3);
 }

@@ -41,12 +41,10 @@ function switchPageState(direction) {
             if (pageState < pageElements.length) {
                 amount = pageState * -100;
                 slideContainer.style.top = amount + "vh";
-                pageElements[pageState].style.position = "relative"
                 pageState++;
             } else if (pageState == pageElements.length) {
                 pageState = 1;
                 slideContainer.style.top = "0vh";
-                pageElements[pageState - 1].style.position = "relative"
             }
             break;
         case 1:
@@ -56,9 +54,6 @@ function switchPageState(direction) {
                 slideContainer.style.top = amount + "vh";
             } else if (pageState == 1) {
                 pageState = pageElements.length;
-                for (let i = 0; i < pageState; i++) {
-                    pageElements[i].style.position = "relative";
-                }
                 amount = (pageState - 1) * -100;
                 slideContainer.style.top = amount + "vh";
             }
@@ -72,6 +67,14 @@ function switchPageState(direction) {
 document.addEventListener('DOMContentLoaded', function () {
     slideContainer = document.getElementById("slideContainer");
     slideContainer.style.height = (slideContainer.children.length * 100) + "vh";
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowUp' || event.key === 'PageUp'|| event.key === 'w') {
+            switchPageState(1)
+        } else if (event.key === 'ArrowDown' || event.key === 'PageDown' || event.key === 's'){
+            switchPageState(0)
+        }
+      });
 });
 
 

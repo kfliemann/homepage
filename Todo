@@ -1,5 +1,18 @@
 Todo:
-    ☐ mobile ansicht
-        ☐ margin-left mit vw ist kacke für mobile weil vw 2 in desktop groß in handy klein wegen %
-    ☐ body
-    ☐ footer
+    ✔ line ende border entfernen @done(24-01-31 23:10)
+    ✔ header abteil one page machen @done(24-02-02 00:05)
+    ☐ typing effect für das letzte </html> element im footer machen
+    ✔ body content @done(24-02-02 00:05)
+    ☐ body styling
+    ✔ footer content @done(24-02-02 00:05)
+    ☐ footer styling
+    ☐ header animation mit schwingendem text "and everything inbetween" (siehe pendulum ordner)
+    ✔ scroll effekt funktionalität @done(24-02-02 00:05)
+    ✔ scrollen auch mit pfeiltasten / bild auf,ab / (w/s ?) @done(24-02-02 14:40)
+    ✔ scroll effekt machen, sodass nicht plötzlich neue elemente spawnen sondern nach oben/unten verschoben werden mit einem smooth scroll @done(24-02-02 14:24)
+    ☐ favicon hinzufügen
+    
+mobile ansicht:
+    ☐ seiten ansicht mobile porten
+    ☐ scroll effekt per js für mobile ansicht implementieren
+    ☐ margin-left mit vw ist kacke für mobile weil vw 2 in desktop groß in handy klein wegen %

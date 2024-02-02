@@ -74,7 +74,17 @@ function switchPageState(direction) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function () { 
 
+    document.getElementById("world").addEventListener('transitionstart', function () {
+        //TODO
+    });
+
+    document.getElementById("world").addEventListener('transitionend', function () {
+        //TODO
+    });
+
+});
 
 
 

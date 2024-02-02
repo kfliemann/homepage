@@ -9,6 +9,8 @@ body {
     right: 20%;
     margin: 0 auto;
     overflow-y: hidden;
+    top: 0;
+	transition: 0.75s;
 }
 
 #head {

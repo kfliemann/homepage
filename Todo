@@ -1,6 +1,8 @@
 Todo:
     ✔ line ende border entfernen @done(24-01-31 23:10)
     ✔ header abteil one page machen @done(24-02-02 00:05)
+    ✔ line blinking wieder hinzufügen @done(24-02-03 15:19)
+    ☐ linke blinking entfernen, wenn gescrollt wird
     ☐ typing effect für das letzte </html> element im footer machen
     ✔ body content @done(24-02-02 00:05)
     ✔ header styling @done(24-02-02 22:20)

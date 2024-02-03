@@ -49,6 +49,8 @@ body {
 #body-fun-content,
 #footer-content,
 .tag-container {
+    display: flex;
+    flex-direction: column;
     border-left: var(--leftBorder);
     padding-left: 0.4rem;
 }
@@ -96,6 +98,14 @@ body {
     margin-left: var(--arrowMargin);
 }
 
+.code-container-layer-1,
+.code-container-layer-2,
+.code-container-layer-3,
+.code-container-layer-4,
+.code-container-layer-5 {
+    display: inline-block;
+}
+
 .code-container-layer-3 {
     margin-left: var(--codeTagMargin);
 }
@@ -106,4 +116,92 @@ body {
 
 .code-container-layer-5 {
     margin-left: calc(var(--codeTagMargin) * 3);
+}
+
+.code-init {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.code-follow {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#code-1 {
+    animation: typing 0.15s steps(6);
+}
+
+#code-2 {
+    animation: typing 0.15s steps(6), slidein 0s ease 0s forwards;
+    animation-delay: 0.15s;
+}
+
+#code-3 {
+    animation: typing 0.15s steps(6), slidein 0s ease 0s forwards;
+    animation-delay: 0.30s;
+}
+
+#code-4 {
+    animation: typing 0.35s steps(14), slidein 0s ease 0s forwards;
+    animation-delay: 0.45s;
+}
+
+#code-5 {
+    animation: typing 1.2s steps(73) forwards, slidein 0s ease 0s forwards;
+    animation-delay: 0.8s;
+}
+
+#code-6 {
+    animation: typing 0.15s steps(7) forwards, slidein 0s ease 0s forwards;
+    animation-delay: 2s;
+}
+
+.code-7 {
+    animation: typing 0.16s steps(7) forwards, slidein 0s ease 0s forwards, blink .5s step-end infinite alternate;
+    animation-delay: 2.15s;
+}
+
+.code-blinking {
+    animation: blink .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+        border-right: 4px solid black;
+    }
+
+    99.99% {
+        width: 100%;
+        border-right: 4px solid black;
+    }
+
+    100% {
+        width: 100%;
+        border-right: transparent;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-right-color: transparent;
+    }
+
+    50% {
+        border-right: 3px solid black;
+    }
 }

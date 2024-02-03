@@ -52,11 +52,13 @@ function switchPageState(direction) {
                         pageState = 1;
                         slideContainer.style.top = pageState * -100 + "vh";
                     }
+                    removeBlinking();
                 });
             }
             break;
         case 1:
             if (pageState >= 1) {
+
                 pageState--;
                 slideContainer.style.top = pageState * -100 + "vh";
 
@@ -67,9 +69,33 @@ function switchPageState(direction) {
                         pageState = pageElements - 2;
                         slideContainer.style.top = pageState * -100 + "vh";
                     }
+                    removeBlinking();
                 });
             }
             break;
+    }
+}
+
+function removeBlinking() {
+    let slideContainer = document.getElementById("slideContainer");
+    tempState = pageState - 1;
+    if (slideContainer.querySelector('.code-7') !== null) {
+        let tempElem = slideContainer.querySelector('.code-7');
+        tempElem.classList.remove("code-7");
+        tempElem.classList.remove("code-follow")
+    }
+    if (tempState == (slideContainer.childElementCount - 2)) {
+        let tempElem = slideContainer.children[tempState].querySelector(".code-blinking");
+        slideContainer.querySelectorAll('.code-blinking').forEach(element => {
+            if (element !== tempElem) {
+                element.classList.remove("code-blinking");
+            }
+        });
+    } else if (tempState > 1 && tempState < (slideContainer.childElementCount - 2)) {
+        if (slideContainer.children[tempState].querySelector('.code-blinking') !== null) {
+            let tempElem = slideContainer.children[tempState].querySelector('.code-blinking');
+            tempElem.classList.remove("code-blinking")
+        }
     }
 }
 

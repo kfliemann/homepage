@@ -31,6 +31,9 @@ body {
 #slideContainer {
     position: absolute;
     top: 0;
+}
+
+.slideContainer {
     transition: 0.75s ease-in-out;
 }
 

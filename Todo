@@ -13,7 +13,10 @@ Todo:
     ✔ scrollen auch mit pfeiltasten / bild auf,ab / (w/s ?) @done(24-02-02 14:40)
     ✔ scroll effekt machen, sodass nicht plötzlich neue elemente spawnen sondern nach oben/unten verschoben werden mit einem smooth scroll @done(24-02-02 14:24)
     ☐ favicon hinzufügen
+    ☐ hitbox für up/down arrow erhöhen
+    ✔ wrap around besser machen, sodass es infinite scrolling ist @done(24-02-03 13:42)
     ☐ go back adventurer page wenn man eine url anklickt, die nicht existiert
+    ✔ bug, dass manchmal zuerst das voreingeschobene footer element sichtbar ist @done(24-02-03 13:42)
 mobile ansicht:
     ☐ seiten ansicht mobile porten
     ☐ scroll effekt per js für mobile ansicht implementieren

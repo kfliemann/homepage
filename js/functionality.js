@@ -100,6 +100,15 @@ function removeBlinking() {
 }
 
 /**
+ * move to head element, used in buttons
+ */
+function moveToHead(){
+    let slideContainer = document.getElementById("slideContainer");
+    pageState = 1;
+    slideContainer.style.top = pageState * -100 + "vh";
+}
+
+/**
  * append first / prepend last item to list for smoother infinite scroll
  */
 document.addEventListener('DOMContentLoaded', function () {

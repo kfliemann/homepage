@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kevin fliemann | full-stack web dev</title>
+	<title>kevin fliemann | full-stack dev</title>
 	<meta name="author" content="Kevin Fliemann">
 	<meta name="description" content="portfolio website to showcase my projects and experiences">
 	<meta property="og:locale" content="de_DE">
@@ -63,7 +63,7 @@
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-4">
 								<p class="code-follow" id="code-5">
-									software developer swinging from front- to back- and everything inbetween
+									web developer swinging from front- to back- and everything inbetween
 								</p>
 							</div>
 						</div>
@@ -130,50 +130,40 @@
 									<h1>Work related Projects</h1>
 									<div>
 										<h2>
-											Schellenberg GmbH Shopware Upgrade
+											Schellenberg GmbH Webshop Upgrade
 										</h2>
 										<p>
-											In this project, I supported <a href="https://www.schellenberg.de/"
+											in this project, i supported <a href="https://www.schellenberg.de/"
 												target="_blank">Schellenberg GmbH</a> in
 											upgrading their webshop by migrating it
-											from Shopware version 5 to version 6.
-										</p>
-										<p>This step was not a simple update, but a fundamental
-											change, as Shopware 5 and 6 are based on different technical foundations and
-											frameworks.
+											from shopware version 5 to version 6.
 										</p>
 										<p>
-											During the project, I not only implemented the frontend design according to
-											the
-											company's
-											wishes, but also extended Shopware plugins and wrote my own scripts to
-											ensure
-											that
-											everything ran smoothly in the new system.
+											this step was a fundamental change, as shopware 5 and 6 are based on
+											different technical foundations and frameworks.
 										</p>
 										<p>
-											I also took care of setting up the web server to
-											ensure that everything worked optimally.
+											i took care of setting up a new web server to host the new shop and
+											configuring it to the shop's needs.
+										</p>
+										<p>
+											during the project, i not only implemented the frontend design according to
+											the company's wishes,
+										</p>
+										<p>
+											but also extended shopware plugins and wrote my own
+											scripts to ensure that the new system replaces the old one smoothly.
 										</p>
 
-										<p>
-											you can filter by streaming providers and availability on streaming
-											providers.
+										<p class="boldSentence">
+											using php, symfony4, restapi, javascript, twig, html, css
 										</p>
-										<p>
-											connect with friends and loved ones and find out what you can watch together
-											next
-											based
-											on
-											your matches.
-										</p>
-										<p>
-											languages used: php, javascript, html, css
-										</p>
-										<button class="project-button code-button">
-											<a href="https://schellenberg-shop.de/"
-												target="_blank">schellenberg-shop.de</a>
-										</button>
+										<div class="code-button-container">
+											<button class="code-button"
+												onclick='window.open("https://schellenberg-shop.de/","_blank")'>
+												Schellenberg-Shop
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -216,120 +206,200 @@
 					<div id="body-fun-content">
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-5">
-								<div id="fun">
+								<div id="fun-container">
 									<h1>
-										Private projects
+										Private projects (1/2)
 									</h1>
+									<div class="fun">
+										<h2>
+											Bachelorthesis
+										</h2>
+										<p class="emphasizeSentence">
+											thesis topic: "design and implementation of an assessment analytics
+											dashboard for a web-based learning management system"
+										</p>
+										<p>
+											in the context of the operating systems and distributed systems department
+											project, i contributed to the development of a moodle-like educational
+											learning system.
+										</p>
+										<p>
+											my focus was on implementing a professor admin overview, providing a
+											comprehensive display of all available tasks and their statistics.
+										</p>
+										<p>
+											to display any data, i have written a data generator that allows for the
+											creation of dummy users and questions.
+										</p>
+										<p>
+											additionally, it enables a skillbased simulation of answering the
+											questions by dummy users.
+										</p>
+										<p>
+											i have completely revised the relevant existing database structures,
+											allowing for question versioning.
+										</p>
+										<p>
+											a task detail view allows for task editing and enables the comparison of
+											different versions of a question with basic statistics.
+										</p>
+										<p>
+											furthermore, visualized metrics from the field of item analysis are intended
+											to provide professors with the ability to evaluate the quality of a task
+											and, if necessary, make adjustments to enhance the effectiveness of the
+											teaching materials.
+										</p>
+										<p class="boldSentence">
+											written using php, angular (frontend), nestjs (backend), prisma, mysql and self-hosted on a
+											hetzner server
+										</p>
+										<div class="code-button-container">
+											<div>
+												<button class="code-button"
+													onclick='window.open("/bachelorthesis/index.html","_blank")'>
+													<a>generator</a>
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button"
+													onclick='window.open("https://www.google.com/search?q=todo","_blank")'>
+													<a>dashboard (todo)</a>
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button"
+													onclick='window.open("https://www.google.com/search?q=todo","_blank")'>
+													<a>code (todo)</a>
+												</button>
+											</div>
+										</div>
+
+									</div>
 									<div>
+										<h2>
+											Matcher (work in progress)
+										</h2>
+										<p>
+											matcher is a tinder-esque app that lets you swipe through series and movies.
+										</p>
+										<p class="emphasizeSentence">stay tuned</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tag-container">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-4">
+								<p class="code-blinking">
+									&lt;/div&gt;<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slideScrollButtonDown">
+						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24">
+								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+							</svg></a>
+					</div>
+				</div>
+			</div>
+			<div class="slideElementContainer">
+				<div class="body" id="body-fun">
+					<div class="slideScrollButtonUp">
+						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24">
+								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+							</svg></a>
+					</div>
+					<div class="tag-container">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-4">
+								<p>
+									&lt;div&gt;<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="body-fun-content">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-5">
+								<div id="fun-container">
+									<h1>
+										Private projects (2/2)
+									</h1>
+									<div class="fun">
 										<h2>
 											Text of Life
 										</h2>
-										<p>my first adventure into building something web-related. <br>
-											<b>text of life</b>
+										<p>
+											my first adventure into building something web-related.
+										</p>
+										<p class="emphasizeSentence">
+											find out how much life there really is in
+											your texts
 										</p>
 										<p>
 											allows users to insert text and select a letter to act as a living cell
 											in conway's game of life.
 										</p>
-										<p> the application then runs the game according to the known rules,
-											with the selected letter acting as a live cell and all other letters being
-											considered
-											"dead"
-											cells.
+										<p> the application then runs the game according to the known rules, with the
+											selected letter acting as a live cell and all other letters being considered
+											"dead" cells.
+										</p>
 										<p>
 											in addition, the application offers a random game of life function with the
-											modes small / large shapes. for randomly generated runs, you can view and
-											share
-											the
-											seed
-											used so
-											that you can replay this run.
-
+											modes small / large shapes.
 										</p>
-
 										<p>
-											written in html, javascript and css
+											for randomly generated runs, you can view and share the seed used so that
+											you can replay this run.
 										</p>
-										<button class="project-button code-button">
-											<a href="https://github.com/kfliemann/Text2Life">&lt;code&gt;</a>
-										</button>
-										<button class="project-button code-button">
-											<a href="../text2life/index.html">demo</a>
-										</button>
+										<p class="boldSentence">
+											written in plain html, javascript and css
+										</p>
+										<div class="code-button-container">
+											<div>
+												<button class="code-button">
+													code
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button">
+													demo
+												</button>
+											</div>
+
+										</div>
 									</div>
 									<div>
 										<h2>
-											Bachelorthesis
+											Portfolio Page
 										</h2>
 										<p>
-											Thesis topic: "Design and implementation of an assessment analytics
-											dashboard
-											for a
-											web-based
-											Learning Management System"
+											this page is featuring a minimalistic, one page-style,
+											bi-directional infinite scroll portfolio
 										</p>
 										<p>
-											Goal of this project
+											the page is best viewed in desktop view.
 										</p>
-										<p>
-											In the context of the Operating Systems and Distributed Systems department
-											project,
-											I
-											contributed to the development of a Moodle-like educational learning system.
-											My
-											focus
-											was on
-											implementing a professor admin overview, providing a comprehensive display
-											of
-											all
-											available
-											tasks.
-											A task detail view allows for task editing and facilitates a comparison of
-											different versions of a question with basic statistics.
-											Furthermore, visualized metrics from the field of item analysis are intended
-											to
-											provide
-											professors
-											with the ability to evaluate the quality of a task and, if necessary, make
-											adjustments
-											to
-											enhance the effectiveness of the teaching materials.
+										<p class="boldSentence">
+											written in plain html, javascript and css
 										</p>
-										<p>
-											written using php, angular (typescript, scss), nestjs, prisma, mysql and
-											hosted
-											on a
-											hetzner
-											server
-										</p>
-										<button class="project-button code-button">
-											<a href="/bachelorthesis/index.html">demo</a>
-										</button>
-									</div>
-									<div>
-										<h2>
-											Matcher (wip)
-										</h2>
-										<p>
-											matcher is a tinder-esque app that lets you swipe through series and movies.
-										</p>
-										<p>
-											you can filter by streaming providers and availability on streaming
-											providers.
-										</p>
-										<p>
-											connect with friends and loved ones and find out what you can watch together
-											next
-											based
-											on
-											your matches.
-										</p>
-										<p>
-											written in (wip)
-										</p>
-										<button class="project-button code-button">
-											<a href="#" onclick="return false;">demo (todo)</a>
-										</button>
+										<div class="code-button-container">
+											<div>
+												<button class="code-button">
+													<a onclick="moveToHead()">demo</a>
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button"
+													onclick='window.open("https://github.com/kfliemann/homepage","_blank")'>
+													<a>code</a>
+												</button>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

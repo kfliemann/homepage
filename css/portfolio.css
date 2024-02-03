@@ -7,6 +7,9 @@
     --codeTagMargin: 2rem;
 
     --leftBorder: 4px solid black;
+
+    --color-code-background: 110;
+    --color-code-a: 170;
 }
 
 @font-face {
@@ -14,14 +17,33 @@
     src: url('../fonts/SplineSansMono-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'ChivoMono';
+    src: url('../fonts/ChivoMono-Regular.ttf') format('truetype');
+}
+
 body {
-    background: rgb(169, 169, 169);
+    background: rgb(var(--color-code-background), var(--color-code-background), var(--color-code-background));
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+a {
+    color: rgb(var(--color-code-a), var(--color-code-a), var(--color-code-a));
 }
 
 #world {
     position: absolute;
     left: 15%;
-    right: 15%;
+    right: 10%;
     margin: 0 auto;
     overflow-y: hidden;
     top: 0;
@@ -38,6 +60,9 @@ body {
 }
 
 .slideElementContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     height: 100vh;
     margin-left: var(--slideElementMargin);
@@ -55,8 +80,15 @@ body {
     padding-left: 0.4rem;
 }
 
+#head-content,
+#body-work-content,
+#body-fun-content,
+#footer-content p {
+    line-height: 1.1rem;
+}
+
 .tag-container {
-    font-family: monospace;
+    font-family: "ChivoMono";
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -68,24 +100,12 @@ body {
 }
 
 #head {
-    padding-top: 50vh;
+    padding-top: 25vh;
 }
 
 #head-content {
     font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-#body-work {
-    padding-top: 25vh;
-}
-
-#body-fun {
-    padding-top: 8.8vh;
-}
-
-#footer {
-    padding-top: 36vh;
+    line-height: 1.8rem;
 }
 
 .slideScrollButtonUp {
@@ -129,6 +149,15 @@ body {
     opacity: 0;
 }
 
+#work,
+#fun-container {
+    padding-bottom: 0.5vh;
+}
+
+.fun {
+    padding-bottom: 4vh;
+}
+
 #code-1 {
     animation: typing 0.15s steps(6);
 }
@@ -144,27 +173,60 @@ body {
 }
 
 #code-4 {
-    animation: typing 0.35s steps(14), slidein 0s ease 0s forwards;
+    animation: typing 0.3s steps(14), slidein 0s ease 0s forwards;
     animation-delay: 0.45s;
 }
 
 #code-5 {
-    animation: typing 1.2s steps(73) forwards, slidein 0s ease 0s forwards;
-    animation-delay: 0.8s;
+    animation: typing 1s steps(68) forwards, slidein 0s ease 0s forwards;
+    animation-delay: 0.75s;
 }
 
 #code-6 {
     animation: typing 0.15s steps(7) forwards, slidein 0s ease 0s forwards;
-    animation-delay: 2s;
+    animation-delay: 1.75s;
 }
 
 .code-7 {
     animation: typing 0.16s steps(7) forwards, slidein 0s ease 0s forwards, blink .5s step-end infinite alternate;
-    animation-delay: 2.15s;
+    animation-delay: 1.9s;
 }
 
 .code-blinking {
     animation: blink .5s step-end infinite alternate;
+}
+
+.code-button-container {
+    padding-top: 0.8vh;
+    display: flex;
+}
+
+.buttonSpacing {
+    padding-left: 1.5rem;
+}
+
+.code-button {
+    color: rgb(200, 200, 200);
+    background-color: rgb(35, 35, 35);
+    box-shadow: 0.25rem 0.25rem 0.3rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    border-width: 0;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.emphasizeSentence {
+    padding: 0.5rem 2rem;
+    text-decoration: underline;
+}
+
+.boldSentence{
+    font-weight: 700;
 }
 
 @keyframes typing {

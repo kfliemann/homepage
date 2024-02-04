@@ -380,6 +380,9 @@
 										<h2>
 											Portfolio Page
 										</h2>
+										<p class="emphasizeSentence">
+											an html page inside an html page? pretty meta, isn't it?
+										</p>
 										<p>
 											this page is featuring a minimalistic, one page-style,
 											bi-directional infinite scroll portfolio
@@ -458,10 +461,41 @@
 					</div>
 					<div id="footer-content">
 						<div class="code-container-layer-1">
-							<div class="code-container-layer-5">
-								<p class="code-follow" id="code-3">
-									contact me
-								</p>
+							<div class="code-container-layer-footer">
+								<div class="socials-container">
+									<div>
+										<h2>socials</h2>
+										<div class="socials-button-container">
+											<button class="code-button-footer"
+												onclick='window.open("https://github.com/kfliemann","_blank")'>
+												<div class="img-container">
+													<img src="./img/github-icon.png" alt="">
+												</div>
+												github
+											</button>
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2>contact</h2>
+									<p class="code-follow" id="code-3">
+										send me a message. i will get an email notification.
+									</p>
+									<div id="contact-area">
+										<textarea name="contact-area" id="contact-textarea" cols="30" rows="6"
+											maxlength="280"
+											oninput="changeCharacterCount()">hi kevin, &#13;&#10;my name is ..</textarea>
+									</div>
+									<div class="message-count">
+										<p>Characters left:</p>
+										<p id="characterCount">280</p>
+									</div>
+									<div class="code-button-send-container">
+										<button class="code-button-send" onclick='sendAjaxRequest()'>
+											send
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

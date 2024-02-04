@@ -102,20 +102,40 @@ function removeBlinking() {
 /**
  * move to head element, used in buttons
  */
-function moveToHead(){
+function moveToHead() {
     let slideContainer = document.getElementById("slideContainer");
     pageState = 1;
     slideContainer.style.top = pageState * -100 + "vh";
 }
 
 /**
+ * live character counter functionality
+ */
+function changeCharacterCount() {
+    let maxLength = 280;
+    let limit = 3;
+    let textarea = document.getElementById("contact-textarea");
+    let characterCount = document.getElementById("characterCount");
+
+    characterCount.textContent = maxLength - textarea.value.length;
+
+    var lines = textarea.value.split("\n");
+
+    if (lines.length > limit) {
+        textarea.value = lines.slice(0, limit).join("\n");
+    }
+}
+
+/**
  * append first / prepend last item to list for smoother infinite scroll
+ * disable arrow up / down page up / down if textarea focused
  */
 document.addEventListener('DOMContentLoaded', function () {
     let slideContainer = document.getElementById("slideContainer");
     let slideElements = document.getElementById("slideContainer").children;
     let firstElement = slideElements[0].cloneNode(true);
     let lastElement = slideElements[slideElements.length - 1].cloneNode(true);
+    let contactTextarea = document.getElementById("contact-textarea");
 
     slideContainer.insertBefore(lastElement, slideElements[0]);
     slideContainer.appendChild(firstElement);
@@ -123,13 +143,28 @@ document.addEventListener('DOMContentLoaded', function () {
     slideContainer.style.height = (slideContainer.childElementCount * 100) + "vh";
 
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'ArrowUp' || event.key === 'PageUp') {
+        if ((event.key === 'ArrowUp' || event.key === 'PageUp') && event.target !== contactTextarea) {
             switchPageState(1);
-        } else if (event.key === 'ArrowDown' || event.key === 'PageDown') {
+        } else if ((event.key === 'ArrowDown' || event.key === 'PageDown') && event.target !== contactTextarea) {
             switchPageState(0);
         }
     });
 });
+
+/**
+ * send ajax request to php script
+ */
+function sendAjaxRequest() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "./php/backend.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("text=" + document.getElementById("contact-textarea").value);
+
+    document.getElementById("contact-textarea").value = "message sent!";
+}
+
+
+
 
 
 

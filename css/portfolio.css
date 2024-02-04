@@ -28,12 +28,12 @@ body {
 
 h1 {
     font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.4vh;
 }
 
 h2 {
     font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4vh;
 }
 
 a {
@@ -89,14 +89,15 @@ a {
 
 .tag-container {
     font-family: "ChivoMono";
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.7vh;
+    padding-top: 0.7vh;
     font-size: 1.5rem;
     border-left: var(--leftBorder);
 }
 
 .tag-container p {
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.2vh;
+    padding-top: 0.2vh;
 }
 
 #head {
@@ -136,6 +137,22 @@ a {
 
 .code-container-layer-5 {
     margin-left: calc(var(--codeTagMargin) * 3);
+}
+
+.code-container-layer-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--codeTagMargin) * 3);
+}
+
+.code-container-layer-footer textarea {
+    font-size: 1.1rem;
+    width: 50%;
+    background: rgb(150, 150, 150);
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid rgb(60, 60, 60);
 }
 
 .code-init {
@@ -196,9 +213,29 @@ a {
     animation: blink .5s step-end infinite alternate;
 }
 
+
+.socials-container {
+    padding-bottom: 3vh;
+}
+
+.socials-button-container {
+    display: flex;
+}
+
 .code-button-container {
     padding-top: 0.8vh;
     display: flex;
+}
+
+.message-count {
+    display: flex;
+}
+
+#characterCount {
+    display: flex;
+    justify-content: end;
+    width: 2rem;
+    padding-left: 0.2rem;
 }
 
 .buttonSpacing {
@@ -220,12 +257,66 @@ a {
     vertical-align: baseline;
 }
 
+.code-button-footer {
+    color: rgb(200, 200, 200);
+    background-color: rgb(35, 35, 35);
+    box-shadow: 0.25rem 0.25rem 0.3rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    border-width: 0;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.code-button-send-container {
+    padding: 0.4vh 0;
+}
+
+.code-button-send {
+    color: rgb(200, 200, 200);
+    font-size: 1rem;
+    background-color: rgb(35, 35, 35);
+    box-shadow: 0.25rem 0.25rem 0.3rem rgb(0, 0, 0);
+    border-radius: 0.4rem;
+    border-width: 0;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0.3rem 1.5rem;
+    text-align: center;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.img-container {
+    padding-right: 0.5rem;
+}
+
+.img-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.code-button-footer svg {
+    fill: rgb(200, 200, 200);
+}
+
 .emphasizeSentence {
     padding: 0.5rem 2rem;
     text-decoration: underline;
 }
 
-.boldSentence{
+.boldSentence {
     font-weight: 700;
 }
 

@@ -39,6 +39,8 @@ function switchPageState(direction) {
         slideContainer.classList.add('slideContainer');
     }
 
+    loseTextareaFocus();
+
     switch (direction) {
         case 0:
             if (pageState < pageElements - 1) {
@@ -76,6 +78,9 @@ function switchPageState(direction) {
     }
 }
 
+/**
+ * removes the blinking border when scrolling past elements, which blink
+ */
 function removeBlinking() {
     let slideContainer = document.getElementById("slideContainer");
     tempState = pageState - 1;
@@ -115,6 +120,7 @@ function changeCharacterCount() {
     let maxLength = 280;
     let limit = 3;
     let textarea = document.getElementById("contact-textarea");
+    syncTextArea(textarea.value);
     let characterCount = document.getElementById("characterCount");
 
     characterCount.textContent = maxLength - textarea.value.length;
@@ -127,14 +133,68 @@ function changeCharacterCount() {
 }
 
 /**
+ * init text area with randomized text
+ */
+function initTextArea() {
+    let maxLength = 280;
+    let limit = 3;
+    let textarea = document.getElementById("contact-textarea");
+    textarea.value = "";
+    let messageInitiator = [
+        "my name is ..",
+        "i have an idea ..",
+        "greetings from ..",
+        "hope this message finds you well. I wanted to discuss ..",
+        "i have a question about ..",
+        "i'm reaching out to you regarding ..",
+        "i'm interested in collaborating on ..",
+        "wanna collaborate .. ?"];
+
+    textarea.value += "hi kevin,\n" + messageInitiator[Math.floor(Math.random() * messageInitiator.length)];
+    let characterCount = document.getElementById("characterCount");
+    characterCount.textContent = maxLength - textarea.value.length;
+
+    var lines = textarea.value.split("\n");
+
+    if (lines.length > limit) {
+        textarea.value = lines.slice(0, limit).join("\n");
+    }
+}
+
+/**
+ * sync prepended textarea with actual textarea text
+ * @param {string} inputText 
+ */
+function syncTextArea(inputText) {
+    let prependedFooter = document.getElementsByClassName("prependedFooter")[0].querySelector("textarea");
+    prependedFooter.value = inputText;
+}
+
+/**
+ * if textarea is focussed, but area has been scrolled away - disable input, to prevent site movement
+ */
+function loseTextareaFocus() {
+    let textarea = document.getElementById("contact-textarea");
+    if (document.activeElement === textarea) {
+        textarea.blur();
+    }
+}
+
+/**
  * append first / prepend last item to list for smoother infinite scroll
  * disable arrow up / down page up / down if textarea focused
  */
 document.addEventListener('DOMContentLoaded', function () {
+    initTextArea();
+    hearbeat();
+
     let slideContainer = document.getElementById("slideContainer");
     let slideElements = document.getElementById("slideContainer").children;
     let firstElement = slideElements[0].cloneNode(true);
     let lastElement = slideElements[slideElements.length - 1].cloneNode(true);
+    lastElement.classList.add("prependedFooter");
+    lastElement.querySelector("textarea").id = "";
+    lastElement.querySelector("#characterCount").id = "";
     let contactTextarea = document.getElementById("contact-textarea");
 
     slideContainer.insertBefore(lastElement, slideElements[0]);
@@ -163,7 +223,12 @@ function sendAjaxRequest() {
     document.getElementById("contact-textarea").value = "message sent!";
 }
 
-
+function hearbeat() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "./php/backend.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("beat=" + true);
+}
 
 
 

@@ -25,8 +25,12 @@ Todo:
     ☐ go back adventurer page wenn man eine url anklickt, die nicht existiert
     ✔ bug, dass manchmal zuerst das voreingeschobene footer element sichtbar ist @done(24-02-03 13:42)
     ☐ projekte von rechts / links reinsliden, für mehr interactivity
-    ☐ randomize message inside of contact area to have more presets
+    ✔ randomize message inside of contact area to have more presets @done(24-02-06 18:47)
     ☐ add email as social?
+    ✔ fix bug, dass manchmal der counter sich nicht aktualisiert, wenn man was in tetxarea tippt @done(24-02-06 18:48)
+    ✔ das vorangeschobene footer element muss im text mit dem tatsächlichen footer element gesynced werden @done(24-02-06 18:47)
+    ✔ wenn man vom footer pagestate weiter scrollt, dann muss die footer textarea den fokus verlieren @done(24-02-06 18:47)
+    ☐ track anonymous pageview count
 mobile ansicht:
     ☐ seiten ansicht mobile porten
     ☐ scroll effekt per js für mobile ansicht implementieren

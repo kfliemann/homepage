@@ -31,6 +31,8 @@ Todo:
     ✔ das vorangeschobene footer element muss im text mit dem tatsächlichen footer element gesynced werden @done(24-02-06 18:47)
     ✔ wenn man vom footer pagestate weiter scrollt, dann muss die footer textarea den fokus verlieren @done(24-02-06 18:47)
     ☐ track anonymous pageview count
+    ☐ reroll textarea wenn ausgeblendet
+    ☐ disable send button und hover finger weg, wenn nachricht abgesendet
 mobile ansicht:
     ☐ seiten ansicht mobile porten
     ☐ scroll effekt per js für mobile ansicht implementieren

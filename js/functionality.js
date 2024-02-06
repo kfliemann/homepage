@@ -126,7 +126,7 @@ function changeCharacterCount() {
         textarea.value = lines.slice(0, limit).join("\n");
     }
 
-    syncTextAreaElements(maxLength);
+    syncTextareaElements(maxLength);
 }
 
 /**
@@ -164,7 +164,7 @@ function initTextArea() {
 /**
  * sync prepended footer element with actual footer element
  */
-function syncTextAreaElements(maxLength) {
+function syncTextareaElements(maxLength) {
     let textarea = document.getElementById("contact-textarea");
     let prependedFooter = document.getElementsByClassName("prependedFooter")[0].querySelector("textarea");
     prependedFooter.value = textarea.value;
@@ -222,16 +222,17 @@ function sendAjaxRequest() {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "./php/backend.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("text=" + document.getElementById("contact-textarea").value);
+    xhr.send("action=message&text=" + encodeURIComponent(document.getElementById("contact-textarea").value));
 
     document.getElementById("contact-textarea").value = "message sent!";
+    syncTextareaElements(280);
 }
 
 function hearbeat() {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "./php/backend.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("beat=" + true);
+    xhr.send("action=beat");
 }
 
 

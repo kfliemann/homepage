@@ -120,16 +120,13 @@ function changeCharacterCount() {
     let maxLength = 280;
     let limit = 3;
     let textarea = document.getElementById("contact-textarea");
-    syncTextArea(textarea.value);
-    let characterCount = document.getElementById("characterCount");
-
-    characterCount.textContent = maxLength - textarea.value.length;
-
     var lines = textarea.value.split("\n");
 
     if (lines.length > limit) {
         textarea.value = lines.slice(0, limit).join("\n");
     }
+
+    syncTextAreaElements(maxLength);
 }
 
 /**
@@ -151,8 +148,11 @@ function initTextArea() {
         "wanna collaborate .. ?"];
 
     textarea.value += "hi kevin,\n" + messageInitiator[Math.floor(Math.random() * messageInitiator.length)];
-    let characterCount = document.getElementById("characterCount");
-    characterCount.textContent = maxLength - textarea.value.length;
+
+    let characterCount = Array.from(document.getElementsByClassName("characterCount"));
+    characterCount.forEach(element => {
+        element.textContent = maxLength - textarea.value.length;
+    });
 
     var lines = textarea.value.split("\n");
 
@@ -162,12 +162,17 @@ function initTextArea() {
 }
 
 /**
- * sync prepended textarea with actual textarea text
- * @param {string} inputText 
+ * sync prepended footer element with actual footer element
  */
-function syncTextArea(inputText) {
+function syncTextAreaElements(maxLength) {
+    let textarea = document.getElementById("contact-textarea");
     let prependedFooter = document.getElementsByClassName("prependedFooter")[0].querySelector("textarea");
-    prependedFooter.value = inputText;
+    prependedFooter.value = textarea.value;
+
+    let characterCount = Array.from(document.getElementsByClassName("characterCount"));
+    characterCount.forEach(element => {
+        element.textContent = maxLength - textarea.value.length;
+    });
 }
 
 /**
@@ -194,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let lastElement = slideElements[slideElements.length - 1].cloneNode(true);
     lastElement.classList.add("prependedFooter");
     lastElement.querySelector("textarea").id = "";
-    lastElement.querySelector("#characterCount").id = "";
     let contactTextarea = document.getElementById("contact-textarea");
 
     slideContainer.insertBefore(lastElement, slideElements[0]);

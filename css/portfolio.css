@@ -34,6 +34,11 @@ a {
     :root{
         --codeTagMargin: 0.5rem;
     }
+
+    #scroller{
+        display: none;
+    }
+
     #world{
         display: none;
     }
@@ -171,7 +176,7 @@ a {
     .code-container-layer-footer {
         display: flex;
         flex-direction: column;
-        margin-left: calc(var(--codeTagMargin) * 3);
+        margin-left: calc(var(--codeTagMargin) * 2);
     }
 
     .code-container-layer-footer textarea {
@@ -359,6 +364,11 @@ a {
     :root{
         --codeTagMargin: 0.5rem;
     }
+
+    #scroller{
+        display: none;
+    }
+
     #world{
         display: none;
     }
@@ -490,7 +500,7 @@ a {
     .code-container-layer-footer {
         display: flex;
         flex-direction: column;
-        margin-left: calc(var(--codeTagMargin) * 3);
+        margin-left: calc(var(--codeTagMargin) * 2);
     }
 
     .code-container-layer-footer textarea {
@@ -707,6 +717,12 @@ a {
 @media only screen and (min-width: 1500px) {
     #world-mobile{
         display: none;
+    }
+
+    #scroller{
+        width: 100%; 
+        height: 100%; 
+        position: absolute
     }
 
     h1 {

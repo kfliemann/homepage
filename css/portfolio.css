@@ -41,10 +41,15 @@ a {
     h1 {
         font-size: 1.6rem;
         margin-bottom: 2vh;
-        text-decoration: underline;
     }
 
     h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2vh;
+        text-decoration: underline;
+    }
+
+    h3 {
         font-size: 1.2rem;
         margin-bottom: 1vh;
     }
@@ -201,6 +206,10 @@ a {
         display: flex;
     }
 
+    .socials-header{
+        padding-bottom: 0.5rem;
+    }
+
     .code-button-container {
         padding-top: 1vh;
         display: flex;
@@ -355,11 +364,17 @@ a {
     }
     
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 2vh;
     }
 
     h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2vh;
+        text-decoration: underline;
+    }
+
+    h3 {
         font-size: 1.4rem;
         margin-bottom: 0.4vh;
     }
@@ -545,6 +560,10 @@ a {
         display: flex;
     }
 
+    .socials-header{
+        padding-bottom: 0.5rem;
+    }
+
     .code-button-container {
         padding-top: 1vh;
         display: flex;
@@ -689,12 +708,19 @@ a {
     #world-mobile{
         display: none;
     }
+
     h1 {
         font-size: 1.6rem;
-        margin-bottom: 1.4vh;
+        margin-bottom: 2vh;
     }
 
     h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.4vh;
+        text-decoration: underline;
+    }
+
+    h3 {
         font-size: 1.4rem;
         margin-bottom: 0.4vh;
     }
@@ -727,6 +753,10 @@ a {
         height: 100vh;
         margin-left: var(--slideElementMargin);
         font-family: "SplineSansMono";
+    }
+
+    .arrow-hover {
+        cursor: pointer;
     }
 
     #head-content,
@@ -882,6 +912,10 @@ a {
 
     .socials-button-container {
         display: flex;
+    }
+
+    .socials-header{
+        padding-bottom: 0.5rem;
     }
 
     .code-button-container {

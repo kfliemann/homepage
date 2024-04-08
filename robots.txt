@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /phpmyadmin/
+Disallow: /bachelorthesis/
+Disallow: /text2life/

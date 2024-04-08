@@ -1,18 +1,20 @@
-<html lang="de">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kevin fliemann | full-stack dev</title>
+	<title>kevin fliemann | full-stack webdeveloper</title>
 	<meta name="author" content="Kevin Fliemann">
-	<meta name="description" content="portfolio website to showcase my projects and experiences">
-	<meta property="og:locale" content="de_DE">
+	<meta name="description" content="portfolio website to showcase my work experiences and private projects">
+	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="kevin fliemann | full-stack web developer">
 	<meta property="og:site_name" content="kevin fliemann | full-stack web developer">
-	<meta property="og:description" content="portfolio website to showcase my projects and experiences">
+	<meta property="og:description" content="portfolio website to showcase my work experiences and private projects">
+	<meta name="robots" content="noindex">
 
-	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="./img/android-chrome-192x192.png">
@@ -24,13 +26,13 @@
 	<script src="js/functionality.js"></script>
 </head>
 
-<body ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)" onwheel="checkScroll(event)">
+<body onwheel="checkScroll(event)">
 	<div id="world">
 		<div class="slideContainer" id="slideContainer" style="top: -100vh;">
 			<div class="slideElementContainer">
 				<div class="slideElement" id="head">
 					<div class="slideScrollButtonUp">
-						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
 							</svg></a>
@@ -61,9 +63,9 @@
 					<div id="head-content">
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-4">
-								<p class="code-follow" id="code-4">
+								<h1 class="code-follow" id="code-4">
 									<b>hi, i'm kevin.</b>
-								</p>
+								</h1>
 							</div>
 						</div>
 						<div class="code-container-layer-1">
@@ -91,7 +93,7 @@
 						</div>
 					</div>
 					<div class="slideScrollButtonDown">
-						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
@@ -101,7 +103,7 @@
 			<div class="slideElementContainer">
 				<div class="body" id="body-work">
 					<div class="slideScrollButtonUp">
-						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
 							</svg></a>
@@ -133,11 +135,11 @@
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-5">
 								<div id="work-container">
-									<h1>Work related Projects</h1>
+									<h2>Work related Projects</h2>
 									<div class="work">
-										<h2>
+										<h3>
 											markenbaumarkt24 GmbH
-										</h2>
+										</h3>
 										<p>
 											at my current employer <a href="https://markenbaumarkt24.de/"
 												target="_blank">markenbaumarkt24</a>, i have carried out a wide range of
@@ -189,9 +191,9 @@
 										</div>
 									</div>
 									<div>
-										<h2>
+										<h3>
 											Schellenberg GmbH Webshop Upgrade
-										</h2>
+										</h3>
 										<p>
 											in this project, i supported <a href="https://www.schellenberg.de/"
 												target="_blank">Schellenberg GmbH</a> in
@@ -240,7 +242,7 @@
 						</div>
 					</div>
 					<div class="slideScrollButtonDown">
-						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
@@ -250,7 +252,7 @@
 			<div class="slideElementContainer">
 				<div class="body" id="body-fun">
 					<div class="slideScrollButtonUp">
-						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
 							</svg></a>
@@ -268,13 +270,13 @@
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-5">
 								<div id="fun-container">
-									<h1>
-										Private projects (1/2)
-									</h1>
+									<h2>
+										Private projects
+									</h2>
 									<div class="fun">
-										<h2>
+										<h3>
 											Bachelorthesis
-										</h2>
+										</h3>
 										<p class="emphasizeSentence">
 											thesis topic: "design and implementation of an assessment analytics
 											dashboard for a web-based learning management system"
@@ -321,22 +323,22 @@
 												<button class="code-button clickable"
 													data-link="/bachelorthesis/index.html"
 													onclick='window.open("/bachelorthesis/index.html","_blank")'>
-													<a>generator</a>
+													generator
 												</button>
 											</div>
 											<div class="buttonSpacing">
 												<button class="code-button"
-													onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable","_blank")'>
-													<a>dashboard (wip)</a>
+													onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable, bind angular to (sub)domain","_blank")'>
+													dashboard (wip)
 												</button>
 											</div>
 										</div>
 
 									</div>
 									<div>
-										<h2>
+										<h3>
 											Matcher (work in progress)
-										</h2>
+										</h3>
 										<p>
 											matcher is a tinder-esque app that lets you swipe through series and movies.
 										</p>
@@ -356,7 +358,7 @@
 						</div>
 					</div>
 					<div class="slideScrollButtonDown">
-						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
@@ -366,7 +368,7 @@
 			<div class="slideElementContainer">
 				<div class="body" id="body-fun">
 					<div class="slideScrollButtonUp">
-						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
 							</svg></a>
@@ -384,13 +386,13 @@
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-5">
 								<div id="fun-container">
-									<h1>
-										Private projects (2/2)
-									</h1>
+									<h2>
+										Private projects
+									</h2>
 									<div class="fun">
-										<h2>
+										<h3>
 											Text of Life
-										</h2>
+										</h3>
 										<p class="emphasizeSentence">
 											my first adventure into building something web-related<br>
 											find out how much life there really is in
@@ -433,9 +435,9 @@
 										</div>
 									</div>
 									<div>
-										<h2>
+										<h3>
 											This Portfolio Page
-										</h2>
+										</h3>
 										<p class="emphasizeSentence">
 											an html page inside an html page. pretty meta, isn't it?
 										</p>
@@ -448,15 +450,15 @@
 										</p>
 										<div class="code-button-container">
 											<div>
-												<button class="code-button">
-													<a onclick="moveToHead()">demo</a>
+												<button onclick="moveToHead()" class="code-button">
+												    demo
 												</button>
 											</div>
 											<div class="buttonSpacing">
 												<button class="code-button clickable"
 													data-link="https://github.com/kfliemann/homepage"
 													onclick='window.open("https://github.com/kfliemann/homepage","_blank")'>
-													<a>code</a>
+													code
 												</button>
 											</div>
 										</div>
@@ -482,7 +484,7 @@
 						</div>
 					</div>
 					<div class="slideScrollButtonDown">
-						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
@@ -492,7 +494,7 @@
 			<div class="slideElementContainer">
 				<div id="footer">
 					<div class="slideScrollButtonUp">
-						<a onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
 							</svg></a>
@@ -518,17 +520,17 @@
 							<div class="code-container-layer-footer">
 								<div class="socials-container">
 									<div>
-										<h2>socials</h2>
+										<h3 class="socials-header">socials</h3>
 										<div class="socials-button-container">
                                             <button class="code-button-footer clickable"
-                                                data-link="https://github.com/kfliemann"
+                                                data-link="https://www.linkedin.com/in/kevinfliemann/"
                                                 onclick='window.open("https://www.linkedin.com/in/kevinfliemann/","_blank")'>
                                                 <div class="img-container">
                                                     <img src="./img/linkedin-logo.png.png" alt="">
                                                 </div>
                                                 linkedin
                                             </button>
-											<button class="code-button-footer" data-link="https://github.com/kfliemann"
+											<button class="code-button-footer clickable" data-link="https://github.com/kfliemann"
 												onclick='window.open("https://github.com/kfliemann","_blank")'>
 												<div class="img-container">
 													<img src="./img/github-icon.png" alt="">
@@ -539,7 +541,7 @@
 									</div>
 								</div>
 								<div style="display: none;">
-									<h2>contact</h2>
+									<h3>contact</h3>
 									<p class="code-follow" id="code-3">
 										send me a message. i will get an email notification.
 									</p>
@@ -591,7 +593,7 @@
 						</div>
 					</div>
 					<div class="slideScrollButtonDown">
-						<a onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
@@ -607,8 +609,8 @@
 					<div class="code-container-layer-1">
 						<div class="code-container-layer-4">
 							<h1 class="code-follow" id="code-4">
-								hi, i'm kevin.
-							</h1>
+								<b>hi, i'm kevin.</b>
+                            </h1>
 						</div>
 					</div>
 					<div class="code-container-layer-1">
@@ -634,11 +636,11 @@
 					<div class="code-container-layer-1">
 						<div class="code-container-layer-4">
 							<div id="work-container">
-								<h1>Work related Projects</h1>
+								<h2>Work related Projects</h2>
 								<div class="work">
-									<h2>
+									<h3>
 										markenbaumarkt24 GmbH
-									</h2>
+									</h3>
 									<ul>
 										<li>programming extensions for the erp system xentral using php, laravel, smarty
 										</li>
@@ -662,9 +664,9 @@
 									</div>
 								</div>
 								<div class="work">
-									<h2>
+									<h3>
 										Schellenberg GmbH Webshop Upgrade
-									</h2>
+									</h3>
 									<ul>
 										<li>migration of the existing shop from shopware version 5 to version 6</li>
 										<p>&#8594; this is a fundamental change, because version 5 and 6 are based on
@@ -697,13 +699,13 @@
 					<div class="code-container-layer-1">
 						<div class="code-container-layer-4">
 							<div id="fun-container">
-								<h1>
+								<h2>
 									Private projects
-								</h1>
+								</h2>
 								<div data-name="ba" class="fun">
-									<h2>
+									<h3>
 										Bachelorthesis
-									</h2>
+									</h3>
 									<p class="emphasizeSentence">
 										thesis topic: "design and implementation of an assessment analytics
 										dashboard for a web-based learning management system"
@@ -736,16 +738,16 @@
 										</div>
 										<div class="buttonSpacing">
 											<button class="code-button"
-												onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable","_blank")'>
+												onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable, bind angular to (sub)domain","_blank")'>
 												dashboard (wip)
 											</button>
 										</div>
 									</div>
 								</div>
 								<div data-name="portfolio" class="fun">
-									<h2>
+									<h3>
 										This Portfolio Page
-									</h2>
+									</h3>
 									<p class="emphasizeSentence">
 										an html page inside an html page. pretty meta, isn't it?
 									</p>
@@ -768,9 +770,9 @@
 									</div>
 								</div>
 								<div data-name="t2l" class="fun">
-									<h2>
+									<h3>
 										Text of Life
-									</h2>
+									</h3>
 									<p class="emphasizeSentence">
 										my first adventure into building something web-related<br>
 										find out how much life there really is in
@@ -804,9 +806,9 @@
 									</div>
 								</div>
 								<div data-name="matcher" class="fun">
-									<h2>
+									<h3>
 										Matcher (work in progress)
-									</h2>
+									</h3>
 									<p>
 										matcher is a tinder-esque app that lets you swipe through series and movies.
 									</p>
@@ -826,7 +828,7 @@
 						<div class="code-container-layer-footer">
 							<div class="socials-container">
 								<div>
-									<h2>socials</h2>
+									<h3 class="socials-header">socials</h3>
 									<div class="socials-button-container">
 										<button class="code-button-footer clickable"
 											data-link="https://github.com/kfliemann"

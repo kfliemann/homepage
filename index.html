@@ -13,6 +13,12 @@
 	<meta property="og:description" content="portfolio website to showcase my projects and experiences">
 
 	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./img/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="./img/android-chrome-512x512.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./img/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/portfolio.css">
 	<script src="js/functionality.js"></script>
@@ -56,7 +62,7 @@
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-4">
 								<p class="code-follow" id="code-4">
-									hi, i'm kevin.
+									<b>hi, i'm kevin.</b>
 								</p>
 							</div>
 						</div>
@@ -126,8 +132,62 @@
 					<div id="body-work-content">
 						<div class="code-container-layer-1">
 							<div class="code-container-layer-5">
-								<div id="work">
+								<div id="work-container">
 									<h1>Work related Projects</h1>
+									<div class="work">
+										<h2>
+											markenbaumarkt24 GmbH
+										</h2>
+										<p>
+											at my current employer <a href="https://markenbaumarkt24.de/"
+												target="_blank">markenbaumarkt24</a>, i have carried out a wide range of
+											activities in the
+											area of web development and process optimization:
+										</p>
+										<p>
+											by programming extensions for the erp system <a
+												href="https://xentral.com/en" target="_blank">xentral</a> using php,
+											laravel and smarty, i made a significant contribution to adapting and
+											improving the
+											system functionalities to the company's needs.
+										</p>
+										<p>
+											i also created an important dashboard for the warehouse department, which is
+											used to monitor processes efficiently and enables all relevant data to be
+											displayed transparently.
+										</p>
+										<p>
+											in order to optimize workflows, i have automated the process of
+											credit note creation, which has led to a significant
+											efficiency and time savings.
+										</p>
+										<p>
+											i developed a php middleware that enables communication with the
+											company <a href="https://www.otto.de/" target="_blank">otto</a> in order to
+											sell articles on their platform. this communication takes place via <a
+												href="https://en.wikipedia.org/wiki/AS2" target="_blank">as2</a>,
+											where otto sends <a href="https://en.wikipedia.org/wiki/EDIFACT"
+												target="_blank">edifact</a> files and the middleware parses the edifact files sent by otto before information is
+											inserted into our database.
+										</p>
+										<p>
+											furthermore i was responsible for the creation of xentral reports for
+											various
+											departments, which were created using sql database queries. these reports
+											provide detailed insights into relevant business data to support informed
+											decision-making processes.
+										</p>
+										<p class="boldSentence">
+											using php, javascript, jquery, laravel, laravel blade, smarty, mysql
+										</p>
+										<div class="code-button-container">
+											<button class="code-button clickable"
+												data-link="https://markenbaumarkt24.de/"
+												onclick='window.open("https://markenbaumarkt24.de/","_blank")'>
+												markenbaumarkt24
+											</button>
+										</div>
+									</div>
 									<div>
 										<h2>
 											Schellenberg GmbH Webshop Upgrade
@@ -159,7 +219,8 @@
 											using php, symfony4, restapi, javascript, twig, html, css
 										</p>
 										<div class="code-button-container">
-											<button class="code-button"
+											<button class="code-button clickable"
+												data-link="https://schellenberg-shop.de/"
 												onclick='window.open("https://schellenberg-shop.de/","_blank")'>
 												schellenberg-shop
 											</button>
@@ -220,7 +281,8 @@
 										</p>
 										<p>
 											in the context of the operating systems and distributed systems department
-											project, i contributed to the development of a moodle-like educational
+											project, i contributed to the development of a <a href="https://moodle.de/"
+												target="_blank">moodle</a>-like educational
 											learning system.
 										</p>
 										<p>
@@ -256,21 +318,16 @@
 										</p>
 										<div class="code-button-container">
 											<div>
-												<button class="code-button"
+												<button class="code-button clickable"
+													data-link="/bachelorthesis/index.html"
 													onclick='window.open("/bachelorthesis/index.html","_blank")'>
 													<a>generator</a>
 												</button>
 											</div>
 											<div class="buttonSpacing">
 												<button class="code-button"
-													onclick='window.open("https://www.google.com/search?q=todo","_blank")'>
-													<a>dashboard (todo)</a>
-												</button>
-											</div>
-											<div class="buttonSpacing">
-												<button class="code-button"
-													onclick='window.open("https://www.google.com/search?q=todo","_blank")'>
-													<a>code (todo)</a>
+													onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable","_blank")'>
+													<a>dashboard (wip)</a>
 												</button>
 											</div>
 										</div>
@@ -283,7 +340,7 @@
 										<p>
 											matcher is a tinder-esque app that lets you swipe through series and movies.
 										</p>
-										<p class="emphasizeSentence">stay tuned</p>
+										<p class="emphasizeSentence">currently learning react for this project. stay tuned!</p>
 									</div>
 								</div>
 							</div>
@@ -334,10 +391,8 @@
 										<h2>
 											Text of Life
 										</h2>
-										<p>
-											my first adventure into building something web-related.
-										</p>
 										<p class="emphasizeSentence">
+											my first adventure into building something web-related<br>
 											find out how much life there really is in
 											your texts
 										</p>
@@ -362,13 +417,14 @@
 										</p>
 										<div class="code-button-container">
 											<div>
-												<button class="code-button"
+												<button class="code-button clickable" data-link="/text2life/index.html"
 													onclick='window.open("/text2life/index.html","_blank")'>
 													text of life
 												</button>
 											</div>
 											<div class="buttonSpacing">
-												<button class="code-button"
+												<button class="code-button clickable"
+													data-link="https://github.com/kfliemann/Text2Life"
 													onclick='window.open("https://github.com/kfliemann/Text2Life","_blank")'>
 													code
 												</button>
@@ -378,7 +434,7 @@
 									</div>
 									<div>
 										<h2>
-											Portfolio Page
+											This Portfolio Page
 										</h2>
 										<p class="emphasizeSentence">
 											an html page inside an html page. pretty meta, isn't it?
@@ -386,9 +442,6 @@
 										<p>
 											this page is featuring a minimalistic, one page-style,
 											bi-directional infinite scroll portfolio
-										</p>
-										<p>
-											the page is best viewed in desktop view.
 										</p>
 										<p class="boldSentence">
 											written in plain html, javascript and css
@@ -400,7 +453,8 @@
 												</button>
 											</div>
 											<div class="buttonSpacing">
-												<button class="code-button"
+												<button class="code-button clickable"
+													data-link="https://github.com/kfliemann/homepage"
 													onclick='window.open("https://github.com/kfliemann/homepage","_blank")'>
 													<a>code</a>
 												</button>
@@ -466,7 +520,15 @@
 									<div>
 										<h2>socials</h2>
 										<div class="socials-button-container">
-											<button class="code-button-footer"
+                                            <button class="code-button-footer clickable"
+                                                data-link="https://github.com/kfliemann"
+                                                onclick='window.open("https://www.linkedin.com/in/kevinfliemann/","_blank")'>
+                                                <div class="img-container">
+                                                    <img src="./img/linkedin-logo.png.png" alt="">
+                                                </div>
+                                                linkedin
+                                            </button>
+											<button class="code-button-footer" data-link="https://github.com/kfliemann"
 												onclick='window.open("https://github.com/kfliemann","_blank")'>
 												<div class="img-container">
 													<img src="./img/github-icon.png" alt="">
@@ -476,7 +538,7 @@
 										</div>
 									</div>
 								</div>
-								<div>
+								<div style="display: none;">
 									<h2>contact</h2>
 									<p class="code-follow" id="code-3">
 										send me a message. i will get an email notification.
@@ -533,6 +595,259 @@
 								viewBox="0 0 24 24">
 								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
 							</svg></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="world-mobile">
+		<div id="firstSlideMobile" class="slideElementContainer">
+			<div class="slideElement" id="head">
+				<div id="head-content">
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-4">
+							<h1 class="code-follow" id="code-4">
+								hi, i'm kevin.
+							</h1>
+						</div>
+					</div>
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-4">
+							<p class="code-follow" id="code-5">
+								web developer swinging from front- to
+							</p>
+						</div>
+					</div>
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-4">
+							<p class="code-follow" id="code-6">
+								back- and everything inbetween
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideElementContainer">
+			<div class="body" id="body-work">
+				<div id="body-work-content">
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-4">
+							<div id="work-container">
+								<h1>Work related Projects</h1>
+								<div class="work">
+									<h2>
+										markenbaumarkt24 GmbH
+									</h2>
+									<ul>
+										<li>programming extensions for the erp system xentral using php, laravel, smarty
+										</li>
+										<li>created an important dashboard for the warehouse department, to monitor
+											processes and evaluate efficiency </li>
+										<li>automized the process of credit note creation, which led to significant
+											efficiency and time savings</li>
+										<li>develoved a php middleware to enable as2 communication with the company otto in
+											order to sell articles on their platform</li>
+										<li>creation of xentral reports for various departments using sql database
+											queries</li>
+									</ul>
+									<p class="boldSentence">
+										using php, javascript, jquery, laravel, laravel blade, smarty, mysql
+									</p>
+									<div class="code-button-container">
+										<button class="code-button clickable" data-link="https://markenbaumarkt24.de/"
+											onclick='window.open("https://markenbaumarkt24.de/","_blank")'>
+											markenbaumarkt24
+										</button>
+									</div>
+								</div>
+								<div class="work">
+									<h2>
+										Schellenberg GmbH Webshop Upgrade
+									</h2>
+									<ul>
+										<li>migration of the existing shop from shopware version 5 to version 6</li>
+										<p>&#8594; this is a fundamental change, because version 5 and 6 are based on
+											different technical foundations and frameworks</p>
+										<li>setting up a new web server to host the new shop and configuring it to the
+											shop's needs</li>
+										<li>implementing front-end design according to company's wishes</li>
+										<li>extending existing shopware plugins and implementing custom plugins to
+											replace the old version with the new one smoothly</li>
+									</ul>
+									<p class="boldSentence">
+										using php, symfony4, restapi, javascript, twig, html, css
+									</p>
+									<div class="code-button-container">
+										<button class="code-button clickable" data-link="https://schellenberg-shop.de/"
+											onclick='window.open("https://schellenberg-shop.de/","_blank")'>
+											schellenberg-shop
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideElementContainer">
+			<div class="body" id="body-fun">
+				<div id="body-fun-content">
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-4">
+							<div id="fun-container">
+								<h1>
+									Private projects
+								</h1>
+								<div data-name="ba" class="fun">
+									<h2>
+										Bachelorthesis
+									</h2>
+									<p class="emphasizeSentence">
+										thesis topic: "design and implementation of an assessment analytics
+										dashboard for a web-based learning management system"
+									</p>
+									<ul>
+										<li>contributing to the development of a moodle-like educational learning system
+										</li>
+										<li>focus on implementing a professor admin overview, providing a display of all
+											tasks and statistics</li>
+										<li>implemented a custom data generator to randomly generate users and questions
+										</li>
+										<li>the generator also enables a skillbased simulation of answering the
+											questions by users</li>
+										<li>completly revised the relevant database structures, allowing for question
+											versioning</li>
+										<li>visualized metrics from the field of item analysis provide the professors
+											with the ability to evaluate the quality of tasks</li>
+									</ul>
+									<p class="boldSentence">
+										written using php, angular (frontend), nestjs (backend), prisma, mysql and
+										self-hosted on a
+										hetzner server
+									</p>
+									<div class="code-button-container">
+										<div class="buttonSpacingFirst">
+											<button class="code-button clickable" data-link="/bachelorthesis/index.html"
+												onclick='window.open("/bachelorthesis/index.html","_blank")'>
+												generator
+											</button>
+										</div>
+										<div class="buttonSpacing">
+											<button class="code-button"
+												onclick='window.open("https://www.google.com/search?q=currently wip to make it viewable","_blank")'>
+												dashboard (wip)
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-name="portfolio" class="fun">
+									<h2>
+										This Portfolio Page
+									</h2>
+									<p class="emphasizeSentence">
+										an html page inside an html page. pretty meta, isn't it?
+									</p>
+									<ul>
+										<li>minimalistic, one page-style, bi-directional infinite scroll porfolio
+										</li>
+										<p>&#8594; full functionality only in pc desktop view.</p>
+									</ul>
+									<p class="boldSentence">
+										written in plain html, javascript and css
+									</p>
+									<div class="code-button-container">
+										<div class="buttonSpacingFirst">
+											<button class="code-button clickable"
+												data-link="https://github.com/kfliemann/homepage"
+												onclick='window.open("https://github.com/kfliemann/homepage","_blank")'>
+												code
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-name="t2l" class="fun">
+									<h2>
+										Text of Life
+									</h2>
+									<p class="emphasizeSentence">
+										my first adventure into building something web-related<br>
+										find out how much life there really is in
+										your texts
+									</p>
+									<ul>
+										<li>insert your text and select a letter to act as a living cell in conways game
+											of life</li>
+										<li>generate a random game of life with the modes small / large shapes</li>
+										<li>save the seed of a random game or share it with your friends to replay the
+											run</li>
+									</ul>
+									<p class="boldSentence">
+										written in plain html, javascript and css
+									</p>
+									<div class="code-button-container">
+										<div class="buttonSpacingFirst">
+											<button class="code-button clickable" data-link="/text2life/index.html"
+												onclick='window.open("/text2life/index.html","_blank")'>
+												text of life
+											</button>
+										</div>
+										<div class="buttonSpacing">
+											<button class="code-button clickable"
+												data-link="https://github.com/kfliemann/Text2Life"
+												onclick='window.open("https://github.com/kfliemann/Text2Life","_blank")'>
+												code
+											</button>
+										</div>
+
+									</div>
+								</div>
+								<div data-name="matcher" class="fun">
+									<h2>
+										Matcher (work in progress)
+									</h2>
+									<p>
+										matcher is a tinder-esque app that lets you swipe through series and movies.
+									</p>
+									<p class="emphasizeSentence">currently learning react for this project. stay tuned!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideElementContainer">
+			<div id="footer">
+				<div id="footer-content">
+					<div class="code-container-layer-1">
+						<div class="code-container-layer-footer">
+							<div class="socials-container">
+								<div>
+									<h2>socials</h2>
+									<div class="socials-button-container">
+										<button class="code-button-footer clickable"
+											data-link="https://github.com/kfliemann"
+											onclick='window.open("https://www.linkedin.com/in/kevinfliemann/","_blank")'>
+											<div class="img-container">
+												<img src="./img/linkedin-logo.png.png" alt="">
+											</div>
+											linkedin
+										</button>
+										<button class="code-button-footer clickable"
+											data-link="https://github.com/kfliemann"
+											onclick='window.open("https://github.com/kfliemann","_blank")'>
+											<div class="img-container">
+												<img src="./img/github-icon.png" alt="">
+											</div>
+											github
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

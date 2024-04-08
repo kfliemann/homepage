@@ -186,12 +186,27 @@ function loseTextareaFocus() {
 }
 
 /**
+ * add eventlistener to every button which enables mouse middle to open button in new tab
+ */
+function addButtonMouseMiddle() {
+    document.querySelectorAll('.clickable').forEach(button => {
+        button.addEventListener('mousedown', event => {
+            if (event.which === 2 || event.button === 1) {
+                const link = button.getAttribute('data-link');
+                window.open(link, '_blank');
+            }
+        });
+    });
+}
+
+/**
  * append first / prepend last item to list for smoother infinite scroll
  * disable arrow up / down page up / down if textarea focused
  */
 document.addEventListener('DOMContentLoaded', function () {
     initTextArea();
-    hearbeat();
+    heartbeat();
+    addButtonMouseMiddle();
 
     let slideContainer = document.getElementById("slideContainer");
     let slideElements = document.getElementById("slideContainer").children;
@@ -228,7 +243,7 @@ function sendAjaxRequest() {
     syncTextareaElements(280);
 }
 
-function hearbeat() {
+function heartbeat() {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "./php/backend.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");

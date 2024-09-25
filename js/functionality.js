@@ -249,25 +249,3 @@ function heartbeat() {
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("action=beat");
 }
-
-
-
-
-//TODO mobile view page scrolling - maybe bad idea to implement. 
-var touchStartY;
-
-function handleTouchStart(event) {
-    touchStartY = event.touches[0].clientY;
-}
-
-function handleTouchMove(event) {
-    var touchEndY = event.touches[0].clientY;
-    var deltaY = touchEndY - touchStartY;
-
-    if (Math.abs(deltaY) > 10) {
-        console.log("moved");
-    }
-
-    touchStartY = touchEndY;
-}
-

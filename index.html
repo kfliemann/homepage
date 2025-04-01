@@ -29,7 +29,7 @@
 	<div id="scroller"></div>
 	<div id="world">
 		<div class="slideContainer" id="slideContainer" style="top: -100vh;">
-			<div class="slideElementContainer">
+			<div class="slideElementContainer" data-name="main-page">
 				<div class="slideElement" id="head">
 					<div class="slideScrollButtonUp">
 						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -100,7 +100,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideElementContainer">
+			<div class="slideElementContainer" data-name="work-page">
 				<div class="body" id="body-work">
 					<div class="slideScrollButtonUp">
 						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -249,7 +249,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideElementContainer">
+			<div class="slideElementContainer" data-name="fun-ba-pomov">
 				<div class="body" id="body-fun">
 					<div class="slideScrollButtonUp">
 						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -361,7 +361,14 @@
 										<div class="code-button-container">
 											<div>
 												<button class="code-button clickable"
-													data-link="https://github.com/kfliemann/Text2Life"
+													data-link="https://github.com/kfliemann/pomov/releases/download/v1.0/Pomov_v1.0.rar"
+													onclick='window.open("https://github.com/kfliemann/pomov/releases/download/v1.0/Pomov_v1.0.rar","_blank")'>
+													download
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button clickable"
+													data-link="https://github.com/kfliemann/pomov"
 													onclick='window.open("https://github.com/kfliemann/pomov","_blank")'>
 													code
 												</button>
@@ -389,7 +396,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideElementContainer">
+			<div class="slideElementContainer" data-name="fun-portfolio-mindfultube">
 				<div class="body" id="body-fun">
 					<div class="slideScrollButtonUp">
 						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -442,9 +449,92 @@
 											</div>
 										</div>
 									</div>
+									<div>
+										<h3>
+											MindfulTube
+										</h3>
+										<p class="emphasizeSentence">
+											firefox extension that makes you focus on the important thing of youtube: <b>watch videos, distraction free</b> 
+										</p>
+										<p>mindfulTube is a firefox extension designed to help you focus on what truly matters on youtube: watching videos without distractions. </p>
+										<p>it simplifies the youtube interface by transforming the homepage into a clean, google-like search view and optimizing the video watch page.</p> 
+										<p>the extension also adds optional quick-access buttons for subscriptions, playlists and history in the navigation bar, 
+											while keeping other youtube functionalities intact. perfect for anyone looking to minimize distractions and enhance their viewing experience.</p>
+										<p class="boldSentence">
+											written in html, javascript and css
+										</p>
+										<div class="code-button-container">
+											<div>
+												<button class="code-button clickable"
+													data-link="https://addons.mozilla.org/de/firefox/addon/mindfultube/"
+													onclick='window.open("https://addons.mozilla.org/de/firefox/addon/mindfultube/","_blank")'>
+													download
+												</button>
+											</div>
+											<div class="buttonSpacing">
+												<button class="code-button clickable"
+													data-link="https://github.com/kfliemann/mindfultube"
+													onclick='window.open("https://github.com/kfliemann/mindfultube","_blank")'>
+													code
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tag-container">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-4">
+								<p>
+									&lt;/div&gt;<br>
+								</p>
+							</div>
+						</div>
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-3">
+								<p class="code-blinking">
+									&lt;/main&gt;<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slideScrollButtonDown">
+						<a class="arrow-hover" onclick="switchPageState(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24">
+								<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+							</svg></a>
+					</div>
+				</div>
+			</div>
+			<div class="slideElementContainer" data-name="fun-matcher">
+				<div class="body" id="body-fun">
+					<div class="slideScrollButtonUp">
+						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24">
+								<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+							</svg></a>
+					</div>
+					<div class="tag-container">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-4">
+								<p>
+									&lt;div&gt;<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="body-fun-content">
+						<div class="code-container-layer-1">
+							<div class="code-container-layer-5">
+								<div id="fun-container">
+									<h2>
+										Private projects
+									</h2>
 									<div class="fun">
 										<h3>
-											Text of Life
+											Text 2 Life
 										</h3>
 										<p class="emphasizeSentence">
 											my first adventure into building something web-related<br>
@@ -474,7 +564,7 @@
 											<div>
 												<button class="code-button clickable" data-link="/text2life/index.html"
 													onclick='window.open("/text2life/index.html","_blank")'>
-													text of life
+													text 2 life
 												</button>
 											</div>
 											<div class="buttonSpacing">
@@ -487,13 +577,16 @@
 
 										</div>
 									</div>
+
 									<div>
 										<h3>
-											Project 'swipingapp'
+											Project 'matcher'
 										</h3>
 										<p class="emphasizeSentence">
 											a tinder-esque app that lets you swipe through series and movies.
 										</p>
+										<p class="boldSentence">currently working on the backend api using laravel</p>
+										<br>
 										<p>stay tuned!</p>
 									</div>
 								</div>
@@ -524,7 +617,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slideElementContainer">
+			<div class="slideElementContainer" data-name="social-footer">
 				<div id="footer">
 					<div class="slideScrollButtonUp">
 						<a class="arrow-hover" onclick="switchPageState(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -826,9 +919,44 @@
 										</div>
 									</div>
 								</div>
+								<div data-name="portfolio" class="fun">
+									<h3>
+										MindfulTube
+									</h3>
+									<p class="emphasizeSentence">
+										firefox extension that makes you focus on the important thing of youtube:  
+										<br><b>watch videos, distraction free</b>
+									</p>
+									<ul>
+										<li>simplifies the youtube interface by transforming the homepage into a clean, google-like search view and optimizing the video watch page.</li> 
+										<li>adds optional quick-access buttons for subscriptions, playlists, and history in the navigation bar, 
+											while keeping other youtube functionalities intact.</li> 
+										<li>perfect for anyone looking to minimize distractions and enhance their viewing experience.</li>
+										<p>&#8594; developed for desktop firefox only</p>	
+									</ul>
+									<p class="boldSentence">
+										written in html, javascript and css
+									</p>
+									<div class="code-button-container">
+										<div class="buttonSpacingFirst">
+											<button class="code-button clickable"
+												data-link="https://addons.mozilla.org/de/firefox/addon/mindfultube/"
+												onclick='window.open("https://addons.mozilla.org/de/firefox/addon/mindfultube/","_blank")'>
+												download
+											</button>
+										</div>
+										<div class="buttonSpacing">
+											<button class="code-button clickable"
+											data-link="https://github.com/kfliemann/mindfultube"
+											onclick='window.open("https://github.com/kfliemann/mindfultube","_blank")'>
+											code
+											</button>
+										</div>
+									</div>
+								</div>
 								<div data-name="t2l" class="fun">
 									<h3>
-										Text of Life
+										Text 2 Life
 									</h3>
 									<p class="emphasizeSentence">
 										my first adventure into building something web-related<br>
@@ -861,13 +989,15 @@
 										</div>
 									</div>
 								</div>
-								<div data-name="swipingapp" class="fun">
+								<div data-name="matcher" class="fun">
 									<h3>
-										Project 'swipingapp'
+										Project 'matcher'
 									</h3>
 									<p class="emphasizeSentence">
 										a tinder-esque app that lets you swipe through series and movies.
 									</p>
+									<p class="boldSentence">currently working on the backend api using laravel</p>
+									<br>
 									<p>stay tuned!</p>
 								</div>
 							</div>
